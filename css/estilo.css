@@ -99,8 +99,8 @@ main, #lista{
 #lista{
     overflow: unset;
     height: 10vh;
-    justify-content: center;
-    gap: 5%;
+    
+    gap: 4%;
 }
 .lista_prod{
     height: 70%;

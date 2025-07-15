@@ -9,7 +9,7 @@ btn.addEventListener('click', () => {
     
 });
 
-document.addEventListener('click', e => {
+document.addEventListener('click', function(e) {
   if (submenu.classList.contains('aparece') && !submenu.contains(e.target) && !btn.contains(e.target)){
         submenu.classList.remove('aparece');
   }
@@ -26,10 +26,10 @@ cerrar.addEventListener('click', () => {
 
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
   const botonF = document.querySelectorAll('.lista_prod');
   const prod = document.querySelectorAll('.tarjeta');
+  
 
   botonF.forEach(button => {
     button.addEventListener('click', () => {
