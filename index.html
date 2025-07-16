@@ -32,7 +32,7 @@
     </div>
     <h1 style="text-align: center;">Lista de Productos</h1>
     <main id="lista">
-        <button data-categoria="todo" class="lista_prod">todo</button>
+        <button data-categoria="todo" class="lista_prod">Todo</button>
         <button data-categoria="Ropa" class="lista_prod">Ropa</button>
         <button data-categoria="Mochilas" class="lista_prod">Mochilas</button>
         <button data-categoria="Accesorios" class="lista_prod">Accesorios</button>
@@ -166,14 +166,30 @@
             <img class="producto" src="" alt="">
             <p>Descripcion mochila</p>
             <div>
-                <button class="talle">S</button>
-                <button class="talle">M</button>
-                <button class="talle">L</button>
-                <button class="talle">XL</button>
+                <input type="ra" class="talle" name="S">
+                <input type="ra" class="talle" name="M">
+                <input type="ra" class="talle" name="L">
+                <input type="ra" class="talle" name="XL">
             </div>
             <button class="agr">Agregar Carrito</button>
         </div>
     </main>
+    <form id="form" class="tarjeta.mostrar">
+        <img src="" alt="imagen del producto">
+        <br>
+        <input type="number" placeholder="Cantidad">
+        <p>Elija el talle </p>
+        S
+        <input type="checkbox" class="talle" name="S">
+        M
+        <input type="checkbox" class="talle" name="M">
+        L
+        <input type="checkbox" class="talle" name="L">
+        XL
+        <input type="checkbox" class="talle" name="XL">
+        <p>Todo confirmado?</p>
+        <button class="agr">Agregar Carrito</button>
+    </form>
     <footer id="footer">
         <h3>Contactanos y demas opciones</h3>
         <button class="parte_baja">Contactanos</button>

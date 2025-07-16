@@ -11,6 +11,8 @@ header{
     width: 100%;
     color: #FFF;
     background-color: #00223a;
+    position: sticky;
+    top: 0;
 }
 img{
     height: auto;
@@ -64,9 +66,9 @@ img{
     right: 0;
     width: 30vw;
     padding-top: 4.5%;
-    height: 100%;
+    height: 100vh;
     background-color: #FFF;
-    gap: 1.5rem;   
+    gap: 1.5rem;
 }
 a{
     scale: 1.2;
@@ -97,16 +99,15 @@ main, #lista{
     gap: 10px;
 }
 #lista{
-    overflow: unset;
-    height: 10vh;
     
-    gap: 4%;
+    height: 12vh;
+    gap: 5%;
 }
 .lista_prod{
     height: 70%;
     background-color: #FFF;
     border-radius: 10px;
-    font-size: 110%;
+    font-size: 100%;
     width: 100%;
 }
 .lista_prod:hover{
@@ -136,6 +137,9 @@ main, #lista{
     font-weight: 600;
     border-radius: 5px;   
 }
+.talle::{
+    background-color: red;
+}
 .producto{
     height: auto;
     width: 50px;
@@ -160,4 +164,15 @@ footer{
     height: 30vh;
     background-color: #181a1b;
     color: #F4EBD0;
+}
+
+#form{
+    
+    position: sticky;
+position: absolute;
+    top: 50%;
+    background-color: #ffff;
+    padding: 2%;
+    border-radius: 10%;
+
 }
