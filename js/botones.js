@@ -1,12 +1,9 @@
-
 const submenu = document.querySelector('.menu');
 const btn = document.querySelector('#barra_desplegable');
 const aparece = document.querySelector('.aparece');
 
-
 btn.addEventListener('click', () => { 
     submenu.classList.add('aparece');
-    
 });
 
 document.addEventListener('click', function(e) {
@@ -20,16 +17,9 @@ cerrar.addEventListener('click', () => {
     submenu.classList.remove('aparece');
 })
 
-  
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
   const botonF = document.querySelectorAll('.lista_prod');
   const prod = document.querySelectorAll('.tarjeta');
-  
 
   botonF.forEach(button => {
     button.addEventListener('click', () => {
@@ -44,3 +34,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+const agregar = document.querySelectorAll('.agr');
+const caja = document.getElementById('caja')
+const panel = document.querySelector('.panel');
+const mostrar = document.querySelector('.mostrar');
+
+
+agregar.forEach(function(recorrido){
+
+  recorrido.addEventListener('click', () => {
+    
+    panel.classList.remove('panel')
+    panel.classList.add('mostrar')
+  })
+
+})
+
+  document.addEventListener('click', function(e) {
+    if(panel.classList.contains('mostrar') && !panel.contains(e.target) && !caja.contains(e.target)){
+      panel.classList.remove('mostrar')
+      panel.classList.add('panel')
+    }
+  })
