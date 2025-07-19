@@ -4,32 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
+    <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/carrito_estilo.css">
+    <script src="js/carrito.js" defer></script>
+    
 </head>
 <body>
-    <a href="index.html">Agregar+</a>
-    <table>
-        <tr>
-            <th>Productos</th>
-            <th>Cantidad</th>
-            <th>Talla</th>
-            <th>Precio</th>
-            <th></th>
-        </tr>
-        <tr>
-            <td>ejemplo</td>
-            <td>ejemplo</td>
-            <td>ejemplo</td>
-            <td>ejemplo</td>
-            <td><button id="del"><img class="icono" src="imagenes/eliminar.png" alt=""></button></td>
-        </tr>
-        <tr>
-            <td>ejemplo</td>
-            <td>ejemplo</td>
-            <td>ejemplo</td>
-            <td>ejemplo</td>
-            <td><button id="del"><img class="icono" src="imagenes/eliminar.png" alt=""></button></td>
-        </tr>
-    </table>
+    <header>
+        <img id="logo" src="imagenes/Logo_Acqua.jpg" alt="">
+        <h1>Carrito</h1>
+        <button id="barra_desplegable" ><img src="imagenes/menu.png" alt=""></button>
+    
+        <div class="menu">
+             <button style="background-color: unset;" id="barra_cerrar"><img src="imagenes/menu.png" alt="Menu desplegable"></button>
+            
+            <a href="index.html">Menu</a>
+            <a href="index.html">Productos</a>
+            <a href="tutoriales.html">Tutoriales</a>
+            <a href="#footer">Contacto</a>
+        </div>
+    </header>
+    <main>
+        <a href="index.html"><img id="volver" src="imagenes/volver.png" alt="">Volver</a>
+
+        <a href="index.html">Agregar+</a>
+        <table>
+            <tr>
+                <th>Productos</th>
+                <th>Cantidad</th>
+                <th>Talla</th>
+                <th>Precio</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><img id="producto" src="imagenes/antiparras negras.jpeg" alt="antiparras"></td>
+                <td>2</td>
+                <td>S</td>
+                <td>$3000.00</td>
+                <td><button id="del"><img class="icono" src="imagenes/eliminar.png" alt=""></button></td>
+            </tr>
+            <tr>
+                <td>ejemplo</td>
+                <td>ejemplo</td>
+                <td>ejemplo</td>
+                <td>ejemplo</td>
+                <td><button id="del"><img class="icono" src="imagenes/eliminar.png" alt=""></button></td>
+            </tr>
+        </table>
+    </main>
+    <script src="js/botones.js"></script>
 </body>
 </html>

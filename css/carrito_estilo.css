@@ -1,5 +1,7 @@
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;  
+    background-color: rgb(234, 244, 253); 
 }
 table{
     display: flex;
@@ -7,10 +9,31 @@ table{
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    text-align: center;
+    text-align: center;   
+}
+main{
+    flex-direction: column;
+    justify-content: center;
+    height: 40vh;
+    margin-top: 5%;
+    overflow: unset;
+    background-color: unset;
+    gap: 6%;
     
 }
+a{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    font-weight: 500;
+    gap: 5px;
+}
+#volver{
+    height: auto;
+    width: 20px;
+}
 th{
+    
     border:1px solid black;
     height: 6vh;
     background-color: rgb(34, 34, 34);
@@ -19,11 +42,15 @@ th{
 }
 td{
     width: 100vh;
-    
-    height: 6vh;
+    height: 10vh;
+    color: gray;
+}
+#producto{
+    height: 60px;
+    width: auto;
 }
 tr{
-    color: gray;
+    color: white;
     width: 100%;
 }
 
